@@ -29,11 +29,11 @@ import { cn } from '@/lib/utils';
 function AssistantList({
   mobile = false,
   collapsed = false,
-  onCompanionSelect,
+  onCrewMemberSelect,
 }: {
   mobile?: boolean;
   collapsed?: boolean;
-  onCompanionSelect?: () => void;
+  onCrewMemberSelect?: () => void;
 }) {
   const convex = useConvex();
   const router = useRouter();
@@ -86,7 +86,7 @@ function AssistantList({
       );
       setAssistant(stillSelected ?? loadedAssistants[0]);
     } catch (error) {
-      console.error('Failed to load companions:', error);
+      console.error('Failed to load crew members:', error);
     }
   };
 
@@ -127,7 +127,7 @@ function AssistantList({
           <Search className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
             className="pl-10"
-            placeholder="Search companions..."
+            placeholder="Search crew members..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -162,13 +162,13 @@ function AssistantList({
                 )}
                 onClick={() => {
                   setAssistant(_assistant);
-                  onCompanionSelect?.();
+                  onCrewMemberSelect?.();
                 }}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
                     setAssistant(_assistant);
-                    onCompanionSelect?.();
+                    onCrewMemberSelect?.();
                   }
                 }}
               >

@@ -13,10 +13,10 @@ import { AssistantContext } from '@/context/AssistantContext';
 import { useWorkspaceBootstrap } from '@/hooks/use-workspace-bootstrap';
 import { cn } from '@/lib/utils';
 
-type MobilePanel = 'chat' | 'companions' | 'settings';
+type MobilePanel = 'chat' | 'crew' | 'settings';
 
 const mobileTabs: { id: MobilePanel; label: string; icon: typeof Bot }[] = [
-  { id: 'companions', label: 'Companions', icon: Bot },
+  { id: 'crew', label: 'Crew', icon: Bot },
   { id: 'chat', label: 'Chat', icon: MessageSquare },
   { id: 'settings', label: 'Settings', icon: Settings2 },
 ];
@@ -66,10 +66,10 @@ export default function WorkspaceShell() {
 
       <div className="flex h-full flex-col lg:hidden">
         <div className="min-h-0 flex-1 overflow-hidden">
-          {mobilePanel === 'companions' && (
+          {mobilePanel === 'crew' && (
             <AssistantList
               mobile
-              onCompanionSelect={() => setMobilePanel('chat')}
+              onCrewMemberSelect={() => setMobilePanel('chat')}
             />
           )}
           {mobilePanel === 'chat' && (

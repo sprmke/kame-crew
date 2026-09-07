@@ -185,7 +185,7 @@ function AssistantSettings({
       toast.success(`Updated ${assistant.name}'s settings`);
       return true;
     } catch (error) {
-      console.error('Failed to save companion settings:', error);
+      console.error('Failed to save crew member settings:', error);
       toast.error('Failed to save settings. Please try again.');
       return false;
     } finally {
@@ -225,8 +225,8 @@ function AssistantSettings({
       setAssistant(remaining[0]);
       requestAssistantsRefresh();
     } catch (error) {
-      console.error('Failed to delete companion:', error);
-      toast.error('Failed to delete companion. Please try again.');
+      console.error('Failed to delete crew member:', error);
+      toast.error('Failed to delete crew member. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -291,7 +291,7 @@ function AssistantSettings({
                     variant="ghost"
                     size="icon"
                     className="h-11 w-11 rounded-xl"
-                    title="Delete companion"
+                    title="Delete crew member"
                   >
                     <Trash className="h-5 w-5" />
                   </Button>
@@ -314,7 +314,7 @@ function AssistantSettings({
                   <button
                     type="button"
                     onClick={openInstructionsModal}
-                    title="Edit companion"
+                    title="Edit crew member"
                     className="surface-muted mt-2 flex w-full cursor-pointer gap-3 rounded-2xl p-3.5 text-left transition-colors hover:ring-2 hover:ring-primary/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   >
                     <Image
@@ -369,7 +369,7 @@ function AssistantSettings({
                         </span>
                       ) : (
                         <span className="text-muted-foreground/90">
-                          Add instructions for this companion…
+                          Add instructions for this crew member…
                         </span>
                       )}
                     </button>
@@ -417,7 +417,7 @@ function AssistantSettings({
           <DialogHeader>
             <DialogTitle>Select Model</DialogTitle>
             <DialogDescription>
-              Choose an AI model for {assistant?.name ?? 'this companion'}.
+              Choose an AI model for {assistant?.name ?? 'this crew member'}.
             </DialogDescription>
           </DialogHeader>
           {assistant ? (
@@ -457,7 +457,7 @@ function AssistantSettings({
             <>
               <div className="shrink-0 border-b border-border/40 px-6 pb-4 pt-6">
                 <DialogHeader className="space-y-1 pr-8 text-left">
-                  <DialogTitle>Edit companion</DialogTitle>
+                  <DialogTitle>Edit crew member</DialogTitle>
                   <DialogDescription>
                     Customize model and instructions for {assistant.name}.
                   </DialogDescription>
@@ -506,12 +506,12 @@ function AssistantSettings({
                         Instructions
                       </p>
                       <p className="text-xs leading-relaxed text-muted-foreground">
-                        How this companion should behave and respond.
+                        How this crew member should behave and respond.
                       </p>
                     </div>
                     <RichTextEditor
                       autoFocus={focusInstructionsEditor}
-                      placeholder="Add instructions for this companion…"
+                      placeholder="Add instructions for this crew member…"
                       minHeight="320px"
                       value={assistant.userInstruction ?? ''}
                       onChange={(html) =>

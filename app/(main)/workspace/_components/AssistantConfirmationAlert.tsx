@@ -28,12 +28,12 @@ function ConfirmationAlert({ children, OnDelete }: ConfirmationAlertProps) {
               <AlertTriangle className="h-5 w-5" />
             </div>
             <AlertDialogTitle className="text-left leading-tight">
-              Delete this companion?
+              Delete this crew member?
             </AlertDialogTitle>
           </div>
           <AlertDialogDescription className="text-left leading-relaxed">
             This action cannot be undone. Custom settings and conversation
-            context for this companion will be permanently removed.
+            context for this crew member will be permanently removed.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter className="gap-2 sm:gap-3">

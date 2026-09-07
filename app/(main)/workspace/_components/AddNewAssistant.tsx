@@ -110,7 +110,7 @@ function AddNewAssistant({
     setSearchQuery('');
     setIsLoading(false);
     setOpen(false);
-    toast.success(`Added ${name} as a new companion`);
+    toast.success(`Added ${name} as a new crew member`);
     onAddAssistant();
   };
 
@@ -119,7 +119,7 @@ function AddNewAssistant({
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="max-w-4xl gap-0 p-0 sm:max-w-4xl">
         <DialogHeader className="space-y-0 border-b border-border/40 px-6 py-5">
-          <DialogTitle>Add New Companion</DialogTitle>
+          <DialogTitle>Add New Crew Member</DialogTitle>
         </DialogHeader>
 
         <div className="grid grid-cols-1 gap-0 md:grid-cols-[minmax(0,240px)_1fr]">
@@ -185,14 +185,14 @@ function AddNewAssistant({
               </AssistantAvatar>
               <div className="flex w-full min-w-0 flex-col gap-4">
                 <Input
-                  placeholder="Companion name"
+                  placeholder="Crew member name"
                   value={selectedAssistant?.name}
                   onChange={(event) =>
                     onHandleInputChange('name', event.target.value)
                   }
                 />
                 <Input
-                  placeholder="Companion title"
+                  placeholder="Crew member title"
                   value={selectedAssistant?.title}
                   onChange={(event) =>
                     onHandleInputChange('title', event.target.value)
@@ -221,7 +221,7 @@ function AddNewAssistant({
               </p>
               <RichTextEditor
                 disabled={!!id}
-                placeholder="Add instructions for this companion…"
+                placeholder="Add instructions for this crew member…"
                 minHeight="200px"
                 value={userInstruction}
                 onChange={(html) =>
@@ -242,7 +242,7 @@ function AddNewAssistant({
                 onClick={addAssistant}
                 className="min-w-[140px] rounded-xl shadow-soft"
               >
-                Add Companion
+                Add Crew Member
               </Button>
             </div>
           </div>
