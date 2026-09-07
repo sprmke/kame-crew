@@ -1,11 +1,11 @@
-# AI Companion
+# Kame Crew
 
 **A modern web app for building a personal team of AI assistants — each with its own personality, instructions, and workspace.**
 
 Pick curated companions (fitness coach, code writer, tutor, and more) or create your own from scratch. Chat in a polished three-panel workspace, track token usage, and upgrade to Pro via Stripe. Built with **Next.js 15**, **Convex**, **Google sign-in**, and **Eden AI** for multi-model chat.
 
 <p align="center">
-  <img src="./docs/screenshots/preview.gif" alt="AI Companion — landing hero with companion carousel demo" width="900" />
+  <img src="./docs/screenshots/preview.gif" alt="Kame Crew — landing hero with companion carousel demo" width="900" />
 </p>
 
 <p align="center">
@@ -71,8 +71,8 @@ Pick curated companions (fitness coach, code writer, tutor, and more) or create 
 
 ## Screenshots
 
-|                         Landing                          |                    Companions onboarding                    |
-| :------------------------------------------------------: | :---------------------------------------------------------: |
+|                       Landing                        |                    Companions onboarding                    |
+| :--------------------------------------------------: | :---------------------------------------------------------: |
 | ![Landing page](./docs/screenshots/landing-page.png) | ![Assistants onboarding](./docs/screenshots/assistants.png) |
 
 ### Workspace
@@ -250,5 +250,5 @@ MIT — use as a portfolio reference with attribution.
 ---
 
 <p align="center">
-  Built for people who want AI that feels like a team — not a single generic chat box.
+  Built for people who want AI that feels like a crew — not a single generic chat box.
 </p>
