@@ -8,7 +8,7 @@ const pillars = [
     icon: Users,
     title: 'Personal, not generic',
     description:
-      'Each companion has a name, avatar, and specialty. Switch contexts without losing your flow.',
+      'Each crew member has a name, avatar, and specialty. Switch contexts without losing your flow.',
   },
   {
     icon: Wand2,
@@ -77,7 +77,7 @@ export function PhilosophySection() {
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
               Most AI apps feel like talking to the same bot in different skins.
-              AI Companion gives each assistant a distinct voice, visual identity,
+              Kame Crew gives each assistant a distinct voice, visual identity,
               and purpose — so you always know who you&apos;re working with.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
@@ -95,7 +95,7 @@ export function PhilosophySection() {
                 feels like it was built for you.&rdquo;
               </blockquote>
               <p className="mt-6 text-sm font-semibold text-muted-foreground">
-                — The AI Companion team
+                — The Kame Crew team
               </p>
             </div>
           </ScrollReveal>

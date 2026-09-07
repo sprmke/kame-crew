@@ -15,7 +15,7 @@ export function VideoSection() {
           </h2>
           <p className="mt-5 text-lg text-muted-foreground">
             Explore the live workspace UI, then watch a short walkthrough of
-            companions, chat, and customization in action.
+            crew members, chat, and customization in action.
           </p>
         </ScrollReveal>
 

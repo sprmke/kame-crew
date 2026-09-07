@@ -13,7 +13,7 @@ import { ScrollReveal } from './scroll-reveal';
 const features = [
   {
     icon: Bot,
-    title: 'Specialized Companions',
+    title: 'Specialized Crew Members',
     description:
       'Pre-built personas for coding, writing, tutoring, fitness, and more — ready to help instantly.',
     accent: 'bg-primary/12 text-primary',
@@ -22,7 +22,7 @@ const features = [
     icon: Palette,
     title: 'Fully Customizable',
     description:
-      'Create companions with custom avatars, names, titles, and instructions tailored to your workflow.',
+      'Create crew members with custom avatars, names, titles, and instructions tailored to your workflow.',
     accent: 'bg-chart-4/12 text-chart-4',
   },
   {
@@ -43,7 +43,7 @@ const features = [
     icon: Sparkles,
     title: 'Smart Suggestions',
     description:
-      'Each companion comes with curated starter prompts so you never face a blank screen.',
+      'Each crew member comes with curated starter prompts so you never face a blank screen.',
     accent: 'bg-chart-3/12 text-chart-3',
   },
   {
@@ -65,7 +65,7 @@ export function FeaturesSection() {
             Everything you need in one workspace
           </h2>
           <p className="mt-5 text-lg text-muted-foreground">
-            Not a generic chatbot — a personal team of AI companions with
+            Not a generic chatbot — a personal crew of AI assistants with
             distinct personalities, all in a polished interface.
           </p>
         </ScrollReveal>

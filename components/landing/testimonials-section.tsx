@@ -6,14 +6,14 @@ import { ScrollReveal } from './scroll-reveal';
 const testimonials = [
   {
     quote:
-      'Having separate companions for coding and writing changed how I work. Each one stays in character and remembers its role.',
+      'Having separate crew members for coding and writing changed how I work. Each one stays in character and remembers its role.',
     author: 'Sarah K.',
     role: 'Software Engineer',
     rating: 5,
   },
   {
     quote:
-      'The onboarding flow is gorgeous. I picked three companions in under a minute and was chatting immediately.',
+      'The onboarding flow is gorgeous. I picked three crew members in under a minute and was chatting immediately.',
     author: 'Marcus T.',
     role: 'Content Creator',
     rating: 5,

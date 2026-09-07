@@ -19,14 +19,14 @@ export function HeroSection() {
             <ScrollReveal>
               <div className="landing-shimmer-badge mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/8 px-4 py-2 text-sm font-medium text-primary lg:mx-0">
                 <Sparkles className="h-4 w-4" />
-                Personal + Customizable AI Companions
+                Personal + Customizable AI Crew
               </div>
             </ScrollReveal>
 
             <ScrollReveal delay={100}>
               <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-6xl xl:text-[3.5rem] xl:leading-[1.08]">
                 Your personal{' '}
-                <span className="landing-gradient-text">AI companions</span> for
+                <span className="landing-gradient-text">AI crew</span> for
                 every journey
               </h1>
             </ScrollReveal>
