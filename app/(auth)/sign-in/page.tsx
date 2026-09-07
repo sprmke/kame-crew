@@ -81,7 +81,7 @@ function SignIn() {
         </div>
         <h2 className="text-2xl font-bold tracking-tight">Welcome back</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          Sign in to access your AI companions and workspace.
+          Sign in to access your Kame Crew and workspace.
         </p>
 
         <Button

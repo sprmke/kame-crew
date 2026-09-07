@@ -121,7 +121,7 @@ function AIAssistants() {
       );
 
       if (!savedAssistants.length) {
-        toast.error('Could not load your companions. Please try again.');
+        toast.error('Could not load your crew members. Please try again.');
         setIsSaving(false);
         return;
       }
@@ -130,8 +130,8 @@ function AIAssistants() {
       setAssistant(savedAssistants[0]);
       router.replace('/workspace');
     } catch (error) {
-      console.error('Failed to save companions:', error);
-      toast.error('Failed to save companions. Please try again.');
+      console.error('Failed to save crew members:', error);
+      toast.error('Failed to save crew members. Please try again.');
       setIsSaving(false);
     }
   };
@@ -148,7 +148,7 @@ function AIAssistants() {
           <BlurFade delay={0.25} inView>
             <div className="empty-state-well max-w-md">
               <h2 className="text-2xl font-bold">
-                All suggested companions are already selected!
+                All suggested crew members are already selected!
               </h2>
               <p className="mt-2 text-muted-foreground">
                 Head to your workspace to start chatting.
@@ -169,7 +169,7 @@ function AIAssistants() {
               <BlurFade delay={0.25} inView>
                 <p className="section-eyebrow">Onboarding</p>
                 <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">
-                  Choose your AI companions
+                  Choose your Kame Crew
                 </h2>
               </BlurFade>
               <BlurFade delay={0.25 * 2} inView>
