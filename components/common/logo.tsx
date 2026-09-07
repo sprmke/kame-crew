@@ -64,7 +64,7 @@ export function Logo({
             'bg-gradient-to-r from-foreground via-foreground to-muted-foreground bg-clip-text text-transparent'
         )}
       >
-        AI<span className="text-primary">Companion</span>
+        Kame<span className="text-primary">Crew</span>
       </span>
     </span>
   );

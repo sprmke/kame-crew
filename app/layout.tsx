@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'AI Companion — Personal & Customizable AI Assistants',
+  title: 'Kame Crew — Personal & Customizable AI Assistants',
   description:
-    'Build your team of AI companions. Custom personalities, multiple models, and a beautiful workspace for every task.',
+    'Build your team of AI assistants with Kame Crew. Custom personalities, multiple models, and a beautiful workspace for every task.',
 };
 
 const themeInitScript = `
