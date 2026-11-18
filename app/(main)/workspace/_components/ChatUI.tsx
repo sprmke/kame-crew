@@ -730,7 +730,7 @@ function ChatUI({ mobile = false }: { mobile?: boolean }) {
               autoResizeTextarea();
             }}
             onKeyDown={(e) => {
-              if (e.key === 'Enter' && !e.shiftKey) {
+              if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
                 e.preventDefault();
                 if (isMaxedOut) {
                   setOpenUserProfile(true);
