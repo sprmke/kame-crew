@@ -313,7 +313,7 @@ function AssistantSettings({
                 <BlurFade delay={0.25}>
                   <button
                     type="button"
-                    onClick={openInstructionsModal}
+                    onClick={() => openInstructionsModal()}
                     title="Edit crew member"
                     className="surface-muted mt-2 flex w-full cursor-pointer gap-3 rounded-2xl p-3.5 text-left transition-colors hover:ring-2 hover:ring-primary/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   >
