@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "ui": "./scripts/dev/ui-worktree.sh",
+    "ui:port": "./scripts/dev/ui-worktree.sh --print-port",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
