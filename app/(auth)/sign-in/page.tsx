@@ -67,6 +67,19 @@ function SignIn() {
     onError: (errorResponse) => console.error(errorResponse),
   });
 
+  // Dev-only: creates a local test user in the configured Convex deployment.
+  // The button never renders in a production build.
+  const localLogin = async () => {
+    const newUser = await CreateUser({
+      name: 'Local Test Admin',
+      email: 'local-test@kame.test',
+      picture: '',
+    });
+    setUser(newUser as User);
+    setAppHomeHrefCache(newUser._id, '/assistants');
+    router.replace('/assistants');
+  };
+
   return (
     <div className="app-shell relative flex min-h-screen flex-col items-center justify-center px-5">
       <div className="absolute right-4 top-4">
@@ -93,6 +106,17 @@ function SignIn() {
           <Image src="/google.png" alt="Google" width={20} height={20} />
           Continue with Google
         </Button>
+
+        {process.env.NODE_ENV !== 'production' ? (
+          <Button
+            onClick={() => void localLogin()}
+            size="lg"
+            variant="outline"
+            className="mt-3 w-full rounded-2xl"
+          >
+            Use local test account
+          </Button>
+        ) : null}
       </div>
     </div>
   );
